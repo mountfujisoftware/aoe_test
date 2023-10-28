@@ -8,9 +8,11 @@ function ImageLoadBar_hook(ctx, width, height, total, current, image) {
 	var barHeight = 20;
 	var barBorderWidth = 2;
 	var barOffset = 10;
+	const windowInnerWidth  = window.innerWidth;
+	const windowInnerHeight = window.innerHeight;
 	// background:
 	ctx.fillStyle = backgroundColor;
-	ctx.fillRect(0, 0, width, height);
+	ctx.fillRect(0, 0, 9000, 5000);
 	// image:
 	var totalHeight, barTop;
 	if (image != null) {
